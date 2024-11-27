@@ -5,11 +5,13 @@
 
 body{
     background-color:rgb(135, 206, 235);
+    padding-top: 50px;
 }
 
 
 
 .container {
+    border-radius: 25px;
     width: 800px;
     margin: 0 auto;
     padding: 20px 55px;
@@ -21,7 +23,7 @@ body{
     align-items: center;
     gap: 30px;
     border-bottom: 2px solid black;
-    padding-bottom: 20px; /* Отступ между содержимым и бордером */
+    padding-bottom: 20px;
     margin-bottom: 20px;
 }
 .header__container h1{
@@ -35,7 +37,7 @@ body{
     border: 2px solid black;
 }
 .form__input {
-    outline: none;                     /* Убираем стандартный контур при фокусе */
+    outline: none;                    
     flex-grow: 1;                      
     border: none;
     font-size: 16px;
@@ -50,32 +52,73 @@ body{
     height: 36px;
 }
 
-.main {
-}
-.main__container {
-   
-}
+
+/* ---------------------main---------------------- */
 .main__filter {
     display: flex;
-    gap: 50px;
+    gap: 20px; 
+    justify-content: center;
+    margin-bottom: 20px; 
 }
-.main__filter-item {
+
+
+
+.main__filter-item button {
+    background-color: #f1f1f1; 
+    border: 2px solid #ccc; 
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+
+}
+
+.main__filter-item button:hover {
+    background-color: #007BFF; 
+    color: white; 
+    border-color: #007BFF; 
+}
+
+.active{
+    background-color: #007BFF; 
+    color: white;
+}
+
+
+.task__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(135, 206, 235); 
+    border-radius: 5px; 
+}
+
+.task__input {
+    flex-grow: 1;
+    border: 1px solid #ccc; 
+    padding: 8px;
+    border-radius: 10px; 
+    font-size: 14px;
+    margin-right: 10px;
+    outline: none;   
+}
+
+.btn-action {
     cursor: pointer;
 }
-img{
+
+.btn-action img {
     width: 30px;
+    height: 30px;
 }
-.All {
+
+.btn-action:hover {
+    opacity: 0.5; 
 }
-.Active {
-}
-.Completed {
-}
-.tasksList {
-}
-.task__items {
-}
-.task__input {
-}
-.btn-action {
+
+.form__button img, .btn-action img {
+    object-fit: contain; 
 }
