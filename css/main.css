@@ -1,0 +1,81 @@
+@import 'reset.css';
+@import url("https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+
+
+body{
+    background-color:rgb(135, 206, 235);
+}
+
+
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 55px;
+    background-color: white;
+}
+.header__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px; /* Отступ между содержимым и бордером */
+    margin-bottom: 20px;
+}
+.header__container h1{
+    font-size: 55px;
+}
+.form {
+    overflow: hidden;
+    display: flex;
+    width: 350px;
+    height: 40px;
+    border: 2px solid black;
+}
+.form__input {
+    outline: none;                     /* Убираем стандартный контур при фокусе */
+    flex-grow: 1;                      
+    border: none;
+    font-size: 16px;
+}
+.form__button {
+    border: none;
+    background-color: #B1B1B1;
+    cursor: pointer;
+}
+.form__button img{
+    width: 50px;
+    height: 36px;
+}
+
+.main {
+}
+.main__container {
+   
+}
+.main__filter {
+    display: flex;
+    gap: 50px;
+}
+.main__filter-item {
+    cursor: pointer;
+}
+img{
+    width: 30px;
+}
+.All {
+}
+.Active {
+}
+.Completed {
+}
+.tasksList {
+}
+.task__items {
+}
+.task__input {
+}
+.btn-action {
+}

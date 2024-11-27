@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>YeaPlanner</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__container">
+                <h1>YeaPlanner</h1>
+                <form action="" class="form" id="form">
+                    <input type="text" class="form__input" id="input" placeholder="Write down your affairs...">
+                    <button id="buttonPlus" class="form__button"><img src="Images/Plus.svg" alt="Plus"></button>
+                </form>
+            </div>
+        </header>
+        <main class="main">
+            <div class="main__container">
+                <ul class="main__filter" role="tablist">
+                    <li class="main__filter-item" >
+                        <button  class="All">All</button>
+                    </li>
+                    <li class="main__filter-item" >
+                        <button   class="Active">Active</button>
+                    </li>
+                    <li class="main__filter-item" >
+                        <button  class="Completed">Completed</button>
+                    </li>
+                </ul>
+
+                <ul class="tasksList">
+
+
+                    <li class="task__items">
+                        <input type="text" id="task__input" class="task__input">
+                        <div class="task__button">
+
+                            <button type="button" data-action="done" class="btn-action">
+                                <img src="Images/tick.svg" alt="Done">
+                            </button>
+                            <button type="button" data-action="delete" class="btn-action">
+                                <img src="Images/cross.svg" alt="Delete">
+                            </button>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </main>
+    </div>
+
+
+
+</body>
+</html>
