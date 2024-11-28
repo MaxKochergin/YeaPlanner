@@ -80,10 +80,11 @@ body{
     border-color: #007BFF; 
 }
 
-.active{
-    background-color: #007BFF; 
+.main__filter button[aria-selected="true"] {
+    background-color: #007BFF;
     color: white;
 }
+
 
 
 .task__items {
@@ -121,4 +122,52 @@ body{
 
 .form__button img, .btn-action img {
     object-fit: contain; 
+    /* эта штука позволяет в событиях не учавствовать а идти на уровень выше */
+    pointer-events: none;
+}
+
+.done{
+    background-color:rgb(104, 209, 104); 
+}
+
+
+@media(max-width:820px){
+    .container {
+        border-radius: 25px;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px 55px;
+        background-color: white;
+    }
+}
+@media(max-width:500px){
+    .container {
+        border-radius: 25px;
+        width: 340px;
+        margin: 0 auto;
+        padding: 20px 25px;
+        background-color: white;
+    }
+    .form {
+        overflow: hidden;
+        display: flex;
+        width: 250px;
+        height: 40px;
+        border: 2px solid black;
+    }
+    .form__input {
+        outline: none;                    
+        flex-grow: 1;                      
+        border: none;
+        font-size: 16px;
+    }
+    .form__button {
+        border: none;
+        background-color: #B1B1B1;
+        cursor: pointer;
+    }
+    .form__button img{
+        width: 50px;
+        height: 36px;
+    }
 }
